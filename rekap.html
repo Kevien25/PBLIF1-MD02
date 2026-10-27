@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rekap - Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</title>
+<link rel="stylesheet" href="rekap.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+      <img src="logo_aplikasi.png" alt="Logo">
+      <div class="judul">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <nav>
+        <a href="index.html">📊 Dashboard</a>
+        <a href="matkul.html">📘 Mata Kuliah</a>
+        <a href="tugas.html">📝 Tugas</a>
+        <a href="jadwal.html">🗓️ Jadwal Belajar</a>
+        <a href="rekap.html" class="aktif" aria-current="page">📈 Rekap</a>
+      </nav>
+      <details class="profil">
+        <summary>👤 Profil ▴</summary>
+        <div class="menu"><a href="login.html">Logout</a></div>
+      </details>
+    </aside>
+    <main>
+      <h1>Rekap Tugas</h1>
+      <p class="muted">Ringkasan jumlah tugas berdasarkan status dan mata kuliah.</p>
+      <div class="card" style="margin-bottom:24px"><div class="card-body">
+        <div class="filter">
+          <select><option>Semua Mata Kuliah</option></select>
+          <div class="grup"><span>Deadline dari</span><input type="date"></div>
+          <div class="grup"><span>sampai</span><input type="date"></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>0</b><span>Total tugas (sesuai filter)</span></div>
+          <div class="stat"><b>0</b><span>Selesai</span></div>
+          <div class="stat"><b>0</b><span>Dikerjakan</span></div>
+          <div class="stat"><b>0</b><span>Belum Mulai</span></div>
+        </div>
+      </div></div>
+      <div class="card">
+        <div class="card-header">Rekap per Mata Kuliah</div>
+        <div class="card-body"><div class="alert alert-info">Data tidak ditemukan.</div></div>
+      </div>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jadwal Belajar - Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</title>
+<link rel="stylesheet" href="jadwal.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+      <img src="logo_aplikasi.png" alt="Logo">
+      <div class="judul">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <nav>
+        <a href="index.html">📊 Dashboard</a>
+        <a href="matkul.html">📘 Mata Kuliah</a>
+        <a href="tugas.html">📝 Tugas</a>
+        <a href="jadwal.html" class="aktif" aria-current="page">🗓️ Jadwal Belajar</a>
+        <a href="rekap.html">📈 Rekap</a>
+      </nav>
+      <details class="profil">
+        <summary>👤 Profil ▴</summary>
+        <div class="menu"><a href="login.html">Logout</a></div>
+      </details>
+    </aside>
+    <main>
+      <h1>Jadwal Belajar</h1>
+      <p class="muted">Atur waktu belajar mandiri per mata kuliah.</p>
+      <div class="card"><div class="card-body">
+        <div class="toolbar" style="margin-bottom:16px">
+          <input type="text" placeholder="Cari topik / mata kuliah..." style="flex-basis:300px;flex-grow:3">
+          <select><option>Semua Mata Kuliah</option></select>
+          <a class="btn" href="#modal">+ Tambah Jadwal</a>
+        </div>
+        <div class="alert alert-info">Data tidak ditemukan.</div>
+      </div></div>
+      <div class="modal" id="modal">
+        <form action="#" method="get">
+          <div class="modal-header"><h2>Jadwal Belajar</h2><a href="#" aria-label="Tutup">&times;</a></div>
+          <div class="modal-body">
+          <div class="campur"><label>Mata Kuliah <span class="req">*</span></label><select name="id_mk" required><option value="">Pilih mata kuliah</option></select></div>
+          <div class="campur"><label>Tanggal <span class="req">*</span></label><input type="date" name="tanggal" required></div>
+          <div class="campur"><label>Jam Mulai <span class="req">*</span></label><input type="time" name="mulai" required></div>
+          <div class="campur"><label>Jam Selesai <span class="req">*</span></label><input type="time" name="selesai" required></div>
+          <div class="campur"><label>Topik</label><input type="text" name="topik"></div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-light" href="#">Batal</a><button class="btn" type="submit">Simpan</button></div>
+        </form>
+      </div>
+    </main>
+</div>
+</body>
+</html>

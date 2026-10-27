@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    background: #f8f9fa;
+}
+
+a {
+    color: #0d6efd;
+}
+
+h1 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.muted {
+    color: #6c757d;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+.card-header {
+    padding: 8px 16px;
+    font-weight: 700;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.alert {
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.alert-info {
+    background: #cff4fc;
+    border-color: #b6effb;
+    color: #055160;
+}
+
+input,
+select,
+textarea {
+    font: inherit;
+    color: #212529;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+input,
+select {
+    height: 38px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.btn:focus-visible {
+    outline: 0;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, .25);
+}
+
+.btn {
+    display: inline-block;
+    font: inherit;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid #0d6efd;
+    border-radius: 6px;
+    background: #0d6efd;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.kotak {
+    width: 100%;
+    max-width: 440px;
+}
+
+.kotak img {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    margin: 0 auto 8px;
+}
+
+.kotak h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.campur {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.tautan {
+    margin-top: 16px;
+    text-align: center;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.btn-sukses {
+    background: #198754;
+    border-color: #198754;
+}
+
+.btn-sukses:hover {
+    background: #157347;
+    border-color: #146c43;
+}
+
+.sukses {
+    display: none;
+    background: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+    margin-bottom: 16px;
+}
+
+.sukses:target {
+    display: block;
+}

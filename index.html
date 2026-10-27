@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+      <img src="logo_aplikasi.png" alt="Logo">
+      <div class="judul">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <nav>
+        <a href="index.html" class="aktif" aria-current="page">📊 Dashboard</a>
+        <a href="matkul.html">📘 Mata Kuliah</a>
+        <a href="tugas.html">📝 Tugas</a>
+        <a href="jadwal.html">🗓️ Jadwal Belajar</a>
+        <a href="rekap.html">📈 Rekap</a>
+      </nav>
+      <details class="profil">
+        <summary>👤 Profil ▴</summary>
+        <div class="menu"><a href="login.html">Logout</a></div>
+      </details>
+    </aside>
+    <main>
+      <h1>Dashboard</h1>
+      <p class="muted">Ringkasan tugas dan jadwal belajar kamu.</p>
+      <div class="stats" style="margin-bottom:24px">
+        <div class="stat"><b>0</b><span>Tugas belum selesai</span></div>
+        <div class="stat"><b>0</b><span>Deadline &le; 3 hari</span></div>
+        <div class="stat"><b>0</b><span>Jadwal belajar hari ini</span></div>
+        <div class="stat"><b>0</b><span>Mata kuliah aktif</span></div>
+      </div>
+      <div class="card" style="margin-bottom:24px">
+        <div class="card-header">Tugas mendekati deadline</div>
+        <div class="card-body"><div class="alert alert-info">Tidak ada tugas mendekati deadline. 🎉</div></div>
+      </div>
+      <div class="card">
+        <div class="card-header">Jadwal belajar hari ini</div>
+        <div class="card-body"><div class="alert alert-info">Tidak ada jadwal belajar hari ini.</div></div>
+      </div>
+    </main>
+</div>
+</body>
+</html>

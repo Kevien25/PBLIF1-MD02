@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tugas - Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</title>
+<link rel="stylesheet" href="tugas.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+      <img src="logo_aplikasi.png" alt="Logo">
+      <div class="judul">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <nav>
+        <a href="index.html">📊 Dashboard</a>
+        <a href="matkul.html">📘 Mata Kuliah</a>
+        <a href="tugas.html" class="aktif" aria-current="page">📝 Tugas</a>
+        <a href="jadwal.html">🗓️ Jadwal Belajar</a>
+        <a href="rekap.html">📈 Rekap</a>
+      </nav>
+      <details class="profil">
+        <summary>👤 Profil ▴</summary>
+        <div class="menu"><a href="login.html">Logout</a></div>
+      </details>
+    </aside>
+    <main>
+      <h1>Tugas</h1>
+      <p class="muted">Kelola tugas dari setiap mata kuliah.</p>
+      <div class="card"><div class="card-body">
+        <div class="toolbar" style="margin-bottom:16px">
+          <input type="text" placeholder="Cari judul / mata kuliah..." style="flex-basis:300px;flex-grow:3">
+          <select><option>Semua Status</option><option>Belum Mulai</option><option>Dikerjakan</option><option>Selesai</option></select>
+          <select><option>Semua Mata Kuliah</option></select>
+          <a class="btn" href="#modal">+ Tambah Tugas</a>
+        </div>
+        <div class="alert alert-info">Data tidak ditemukan.</div>
+      </div></div>
+      <div class="modal" id="modal">
+        <form action="#" method="get">
+          <div class="modal-header"><h2>Tugas</h2><a href="#" aria-label="Tutup">&times;</a></div>
+          <div class="modal-body">
+          <div class="campur"><label>Mata Kuliah <span class="req">*</span></label><select name="id_mk" required><option value="">Pilih mata kuliah</option></select></div>
+          <div class="campur"><label>Judul Tugas <span class="req">*</span></label><input type="text" name="judul" required></div>
+          <div class="campur"><label>Tanggal Diberikan</label><input type="date" name="tgl"></div>
+          <div class="campur"><label>Deadline <span class="req">*</span></label><input type="date" name="deadline" required></div>
+          <div class="campur"><label>Prioritas</label><select name="prioritas"><option>Rendah</option><option selected>Sedang</option><option>Tinggi</option></select></div>
+          <div class="campur"><label>Status</label><select name="status"><option>Belum Mulai</option><option>Dikerjakan</option><option>Selesai</option></select></div>
+          <div class="campur"><label>Catatan</label><textarea name="catatan" rows="2"></textarea></div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-light" href="#">Batal</a><button class="btn" type="submit">Simpan</button></div>
+        </form>
+      </div>
+    </main>
+</div>
+</body>
+</html>

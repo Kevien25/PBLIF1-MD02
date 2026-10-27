@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mata Kuliah - Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</title>
+<link rel="stylesheet" href="matkul.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+      <img src="logo_aplikasi.png" alt="Logo">
+      <div class="judul">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <nav>
+        <a href="index.html">📊 Dashboard</a>
+        <a href="matkul.html" class="aktif" aria-current="page">📘 Mata Kuliah</a>
+        <a href="tugas.html">📝 Tugas</a>
+        <a href="jadwal.html">🗓️ Jadwal Belajar</a>
+        <a href="rekap.html">📈 Rekap</a>
+      </nav>
+      <details class="profil">
+        <summary>👤 Profil ▴</summary>
+        <div class="menu"><a href="login.html">Logout</a></div>
+      </details>
+    </aside>
+    <main>
+      <h1>Mata Kuliah</h1>
+      <p class="muted">Data master mata kuliah.</p>
+      <div class="card"><div class="card-body">
+        <a class="btn" href="#modal" style="margin-bottom:16px">+ Tambah Mata Kuliah</a>
+        <div class="alert alert-info">Data tidak ditemukan.</div>
+      </div></div>
+      <div class="modal" id="modal">
+        <form action="#" method="get">
+          <div class="modal-header"><h2>Mata Kuliah</h2><a href="#" aria-label="Tutup">&times;</a></div>
+          <div class="modal-body">
+          <div class="campur"><label>Kode Mata Kuliah <span class="req">*</span></label><input type="text" name="kode" required></div>
+          <div class="campur"><label>Nama Mata Kuliah <span class="req">*</span></label><input type="text" name="nama" required></div>
+          <div class="campur"><label>Dosen</label><input type="text" name="dosen"></div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-light" href="#">Batal</a><button class="btn" type="submit">Simpan</button></div>
+        </form>
+      </div>
+    </main>
+</div>
+</body>
+</html>
